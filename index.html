@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ 
+  <style> 
+ 
+ * {
+box-sizing: border-box;
+color: white;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    background: rgb(49, 252, 208);
+}
+
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: black;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #FEF9E7  ;
+    color: black;
+  }
+  
+  
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: rgb(49, 252, 208);    
+    padding-left: 20px;
+
+  }
+  
+
+  .card {
+    background-color:#333;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(49, 252, 208);
+    margin-top: 20px;
+  }
+  
+ 
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  .button {
+    background-color: white;
+    color: black;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+  
+  
+
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ashley's Portfolio</h1>
+  <p>A Little About me...</p>
+</div>
+
+<div class="topnav">
+  <a href="https://codingtemple.com/">Coding Temple</a>
+  <a href="https://www.w3schools.com/html/default.asp">Learn HTML </a>
+  <a href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+  <a href="https://pinktaco.com/" style="float:right">Tacos</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Background</h2>
+      
+     
+      <img src= "https://images.unsplash.com/photo-1580674287256-40141f08e9a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt= "warehouse" width="1080px" height="300px">
+      
+      
+      <p>My name is Ashley Hinton. I was born and raised in the south suburbs of Chicago. Most of my expertise is in package distribution and warehousing. I've been in the industry from the very beginning of my professional career. In my previous position, I was an Operations Manager at Fedex Chicago Hub and had been working for the company for about 6 years. </p>
+
+    </div>
+    <div class="card">
+      <h2>Why Do I Want to Learn Web Development? </h2>
+      
+      
+      <img src= "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="two computer screens with code " width="800px" height="500px" align:"center">
+      
+      
+    <p>
+      I wanted a change in my career. What I really like about web development is the fact that it allows you to exercise your creativity, it's a skill that can become another income, and with the tech industry growing more and more, the industry is filled with a variety of opportunties. 
+    </p>
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Things I Like to Do</h2>
+      
+      <img src= "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Man at airport" width="100%" height="10%">
+      
+      <p>
+         <ul>
+        <li>Daydreaming</li> 
+        <li>Kayaking</li>
+        <li>Exploring new places</li>
+        <li>Hanging with friends</li> 
+        </ul></p>
+    </div>
+    <div class="card">
+      <h2>Question For You!! </h2>
+      <h3>Why Do You Want to Learn to Code?</h3>
+     
+      <form>
+        <input type="radio" id="passion" name="reason" value="passion">
+        <label for="passion">Hobby/ Interest</label><br>
+        <input type="radio" id="better life" name="reason" value="better life">
+        <label for="better life">Career Change</label><br>
+        <input type="radio" id="world domination" name="reason" value="world domination">
+        <label for="world domination">To Take Over the World</label><br><br>
+        <input type="submit" value="Submit" class= "button">
+     
+     </form>
+
+    </div>
+    <div class="card">
+      <h3>Follow Me On..</h3>
+       
+      <ul>
+        <li>SpaceOfMy</li>
+        <li>Bookface</li>
+        <li>InstaGrahamCrackers</li>
+        </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>The End</h2>
+</div>
+
+</body>
+</html>
